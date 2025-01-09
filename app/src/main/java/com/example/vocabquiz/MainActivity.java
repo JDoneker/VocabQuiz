@@ -31,7 +31,7 @@ public class MainActivity extends AppCompatActivity {
             public void onClick(View v) {
                 // Update the TextView's text
                 textView.setText("Text has been changed!");
-
+                button.setRotationX(button.getRotationX()+1);
                 // Optionally, show a Toast as feedback
                 Toast.makeText(MainActivity.this, "Text updated!", Toast.LENGTH_SHORT).show();
             }
