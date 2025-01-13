@@ -1,5 +1,6 @@
 package com.example.vocabquiz;
 
+import android.content.Intent;
 import android.graphics.Canvas;
 import android.os.Bundle;
 import android.view.View;
@@ -26,17 +27,14 @@ public class MainActivity extends AppCompatActivity {
         });
         Button button = findViewById(R.id.button);
         final TextView textView = findViewById(R.id.textView);
-
         button.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                // Update the TextView's text
-                textView.setText("Text has been changed!");
-                button.setRotationX(button.getRotationX()+1);
-                button.setRotationY(button.getRotationY()+10);
-                // Optionally, show a Toast as feedback
-                Toast.makeText(MainActivity.this, "Text updated!", Toast.LENGTH_SHORT).show();
+                // Create an intent to navigate to SecondActivity
+                Intent intent = new Intent(MainActivity.this, SecondActivity.class);
+                startActivity(intent);
             }
         });
+
     }
 }
