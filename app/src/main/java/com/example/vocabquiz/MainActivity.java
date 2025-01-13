@@ -1,5 +1,6 @@
 package com.example.vocabquiz;
 
+import android.graphics.Canvas;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
@@ -32,6 +33,7 @@ public class MainActivity extends AppCompatActivity {
                 // Update the TextView's text
                 textView.setText("Text has been changed!");
                 button.setRotationX(button.getRotationX()+1);
+                button.setRotationY(button.getRotationY()+10);
                 // Optionally, show a Toast as feedback
                 Toast.makeText(MainActivity.this, "Text updated!", Toast.LENGTH_SHORT).show();
             }
