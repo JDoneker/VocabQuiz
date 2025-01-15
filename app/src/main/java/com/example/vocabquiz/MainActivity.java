@@ -6,6 +6,9 @@ import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
 import android.widget.TextView;
+import android.os.Bundle;
+import android.widget.ImageView;
+
 import android.widget.Toast;
 
 import androidx.activity.EdgeToEdge;
@@ -16,6 +19,7 @@ import androidx.core.view.WindowInsetsCompat;
 
 public class MainActivity extends AppCompatActivity {
     @Override
+
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         EdgeToEdge.enable(this);
@@ -25,8 +29,12 @@ public class MainActivity extends AppCompatActivity {
             v.setPadding(systemBars.left, systemBars.top, systemBars.right, systemBars.bottom);
             return insets;
         });
+        ImageView imageView = findViewById(R.id.imageView);
+        imageView.setOnClickListener(v ->
+                Toast.makeText(MainActivity.this, "Image clicked!", Toast.LENGTH_SHORT).show()
+        );
         Button button = findViewById(R.id.button);
-        final TextView textView = findViewById(R.id.textView);
+        final TextView textView = findViewById(R.id.textView2);
         button.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
