@@ -2,5 +2,8 @@
 <resources>
     <array name="preloaded_fonts" translatable="false">
         <item>@font/acme</item>
+        <item>@font/aldrich</item>
+        <item>@font/anek_devanagari_bold</item>
+        <item>@font/anek_telugu_bold</item>
     </array>
 </resources>

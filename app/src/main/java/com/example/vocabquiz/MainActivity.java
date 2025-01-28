@@ -34,7 +34,7 @@ public class MainActivity extends AppCompatActivity {
                 Toast.makeText(MainActivity.this, "Image clicked!", Toast.LENGTH_SHORT).show()
         );
         Button button = findViewById(R.id.button);
-        final TextView textView = findViewById(R.id.textView2);
+
         button.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
