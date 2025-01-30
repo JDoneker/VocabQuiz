@@ -1,9 +1,12 @@
 package com.example.vocabquiz;
 
 import android.content.Intent;
+import android.graphics.Canvas;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
+import android.widget.TextView;
+import android.os.Bundle;
 import android.widget.ImageView;
 
 import android.widget.Toast;
@@ -26,7 +29,7 @@ public class MainActivity extends AppCompatActivity {
             v.setPadding(systemBars.left, systemBars.top, systemBars.right, systemBars.bottom);
             return insets;
         });
-        ImageView imageView = findViewById(R.id.camachoFace);
+        ImageView imageView = findViewById(R.id.imageView);
         imageView.setOnClickListener(v ->
                 Toast.makeText(MainActivity.this, "Image clicked!", Toast.LENGTH_SHORT).show()
         );
