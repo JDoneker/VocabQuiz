@@ -14,52 +14,52 @@
             android:orientation="vertical">
 
             <CheckBox
-                android:id="@+id/checkBox32"
+                android:id="@+id/checkBox1.1"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:text="CheckBox" />
+                android:text="1.1 Salud" />
 
             <CheckBox
-                android:id="@+id/checkBox31"
+                android:id="@+id/checkBox1.2"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:text="CheckBox" />
+                android:text="1.2 Creencias y valores" />
 
             <CheckBox
-                android:id="@+id/checkBox30"
+                android:id="@+id/checkBox1.3"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:text="CheckBox" />
+                android:text="1.3 Subculturas" />
 
             <CheckBox
-                android:id="@+id/checkBox29"
+                android:id="@+id/checkBox1.4"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:text="CheckBox" />
+                android:text="1.4 Lengua e identidad" />
 
             <CheckBox
-                android:id="@+id/checkBox28"
+                android:id="@+id/checkBox2.1"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:text="CheckBox" />
+                android:text="2.1 Actividades de ocio" />
 
             <CheckBox
-                android:id="@+id/checkBox25"
+                android:id="@+id/checkBox2.2"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:text="CheckBox" />
+                android:text="2.2 Vacaciones y viajes" />
 
             <CheckBox
-                android:id="@+id/checkBox26"
+                android:id="@+id/checkBox2.3"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:text="CheckBox" />
+                android:text="2.3 Historias de vida" />
 
             <CheckBox
-                android:id="@+id/checkBox27"
+                android:id="@+id/checkBox2.4"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:text="CheckBox" />
+                android:text="2.4 Hitos de la vida" />
         </LinearLayout>
 
         <LinearLayout
@@ -68,52 +68,52 @@
             android:orientation="vertical">
 
             <CheckBox
-                android:id="@+id/checkBox16"
+                android:id="@+id/checkBox2.5"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:text="CheckBox" />
+                android:text="2.5 Costumbres y tradiciones" />
 
             <CheckBox
-                android:id="@+id/checkBox11"
+                android:id="@+id/checkBox2.6"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:text="CheckBox" />
+                android:text="2.6 Migración" />
 
             <CheckBox
-                android:id="@+id/checkBox10"
+                android:id="@+id/checkBox3.1"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:text="CheckBox" />
+                android:text="3.1 Entretenimiento" />
 
             <CheckBox
-                android:id="@+id/checkBox6"
+                android:id="@+id/checkBox3.2"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:text="CheckBox" />
+                android:text="3.2 Expresiones artísticas" />
 
             <CheckBox
-                android:id="@+id/checkBox8"
+                android:id="@+id/checkBox3.3"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:text="CheckBox" />
+                android:text="3.3 Comunicación y medios" />
 
             <CheckBox
-                android:id="@+id/checkBox7"
+                android:id="@+id/checkBox3.4"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:text="CheckBox" />
+                android:text="3.4 Tecnología" />
 
             <CheckBox
-                android:id="@+id/checkBox5"
+                android:id="@+id/checkBox3.5"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:text="CheckBox" />
+                android:text="3.5 Innovación científica" />
 
             <CheckBox
-                android:id="@+id/checkBox"
+                android:id="@+id/checkBox4.1"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:text="CheckBox" />
+                android:text="4.1 Relaciones sociales" />
         </LinearLayout>
 
         <LinearLayout
@@ -122,53 +122,52 @@
             android:orientation="vertical">
 
             <CheckBox
-                android:id="@+id/checkBox15"
+                android:id="@+id/checkBox4.2"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:text="CheckBox" />
+                android:text="4.2 Comunidad" />
 
             <CheckBox
-                android:id="@+id/checkBox14"
+                android:id="@+id/checkBox4.3"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:text="CheckBox" />
+                android:text="4.3 Compromiso social" />
 
             <CheckBox
-                android:id="@+id/checkBox13"
+                android:id="@+id/checkBox4.4"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:text="CheckBox" />
+                android:text="4.4 Educación" />
 
             <CheckBox
-                android:id="@+id/checkBox12"
+                android:id="@+id/checkBox4.5"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:text="CheckBox" />
+                android:text="4.5 El mundo laboral" />
 
             <CheckBox
-                android:id="@+id/checkBox4"
+                android:id="@+id/checkBox5.1"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:text="CheckBox" />
+                android:text="5.1 El medio ambiente" />
 
             <CheckBox
-                android:id="@+id/checkBox3"
+                android:id="@+id/checkBox5.2"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:text="CheckBox" />
+                android:text="5.2 Derechos humanos" />
 
             <CheckBox
-                android:id="@+id/checkBox2"
+                android:id="@+id/checkBox5.3"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:text="CheckBox" />
+                android:text="5.3 Paz y conflicto" />
 
             <CheckBox
-                android:id="@+id/checkBox9"
+                android:id="@+id/checkBox5.4"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:text="CheckBox" />
-
+                android:text="5.4 Igualdad" />
         </LinearLayout>
 
         <LinearLayout
@@ -177,78 +176,26 @@
             android:orientation="vertical">
 
             <CheckBox
-                android:id="@+id/checkBox17"
-                android:layout_width="match_parent"
+                android:id="@+id/checkBox5.5"
+                android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="CheckBox" />
+                android:text="5.5 Globalización" />
 
             <CheckBox
-                android:id="@+id/checkBox18"
-                android:layout_width="match_parent"
+                android:id="@+id/checkBox5.6"
+                android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="CheckBox" />
-
-            <CheckBox
-                android:id="@+id/checkBox19"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:text="CheckBox" />
-
-            <CheckBox
-                android:id="@+id/checkBox20"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:text="CheckBox" />
-
-            <CheckBox
-                android:id="@+id/checkBox21"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:text="CheckBox" />
-
-            <CheckBox
-                android:id="@+id/checkBox22"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:text="CheckBox" />
-
-            <CheckBox
-                android:id="@+id/checkBox23"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:text="CheckBox" />
-
-            <CheckBox
-                android:id="@+id/checkBox24"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:text="CheckBox" />
-
-        </LinearLayout>
-
-        <LinearLayout
-            android:layout_width="match_parent"
-            android:layout_height="match_parent"
-            android:orientation="vertical">
-
-            <CheckBox
-                android:id="@+id/checkBox33"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:text="CheckBox" />
-
-            <CheckBox
-                android:id="@+id/checkBox34"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:text="CheckBox" />
+                android:text="5.6 Ética" />
 
             <Button
                 android:id="@+id/button2"
-                android:layout_width="wrap_content"
+                android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:text="Button" />
+
         </LinearLayout>
+
+
 
     </LinearLayout>
 
