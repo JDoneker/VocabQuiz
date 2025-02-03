@@ -17,13 +17,6 @@ import java.util.ArrayList;
 import java.util.HashMap;
 
 public class SecondActivity extends AppCompatActivity {
-    private String[] idList = {
-            "checkBox1_1", "checkBox1_2", "checkBox1_3", "checkBox1_4",
-            "checkBox2_1", "checkBox2_2", "checkBox2_3", "checkBox2_4", "checkBox2_5", "checkBox2_6",
-            "checkBox3_1", "checkBox3_2", "checkBox3_3", "checkBox3_4", "checkBox3_5",
-            "checkBox4_1", "checkBox4_2", "checkBox4_3", "checkBox4_4", "checkBox4_5",
-            "checkBox5_1", "checkBox5_2", "checkBox5_3", "checkBox5_4", "checkBox5_5", "checkBox5_6"
-    };
     private ArrayList<CheckBox> checkBoxArrayList;
     @Override
     protected void onCreate(Bundle savedInstanceState) {

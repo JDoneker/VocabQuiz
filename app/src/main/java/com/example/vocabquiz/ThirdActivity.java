@@ -4,7 +4,6 @@ import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
-import android.widget.CheckBox;
 import android.widget.TextView;
 import android.widget.Toast;
 
@@ -42,15 +41,18 @@ public class ThirdActivity extends AppCompatActivity {
 
 
         vocabularyMap = setVocab();
-        Button button = findViewById(R.id.reveal);
-        final TextView textView = findViewById(R.id.definition);
-        button.setOnClickListener(new View.OnClickListener() {
+        Button reveal = findViewById(R.id.reveal);
+        TextView definition = findViewById(R.id.definition);
+        TextView word = findViewById(R.id.word);
+        reveal.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
                 List<String> keysAsArray = new ArrayList<String>(vocabularyMap.keySet());
                 Random r = new Random();
                 String randomKey = keysAsArray.get(r.nextInt(keysAsArray.size()));
-                textView.setText(vocabularyMap.get(randomKey));
+                word.setText(randomKey);
+                definition.setText(vocabularyMap.get(randomKey));
+
             }
         });
     }
