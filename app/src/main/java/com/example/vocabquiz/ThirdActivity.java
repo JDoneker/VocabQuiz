@@ -1,9 +1,12 @@
 package com.example.vocabquiz;
 
+import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
+import android.widget.CheckBox;
 import android.widget.TextView;
+import android.widget.Toast;
 
 import androidx.activity.EdgeToEdge;
 import androidx.appcompat.app.AppCompatActivity;
@@ -28,6 +31,16 @@ public class ThirdActivity extends AppCompatActivity {
             v.setPadding(systemBars.left, systemBars.top, systemBars.right, systemBars.bottom);
             return insets;
         });
+
+        Intent intent = getIntent();
+        ArrayList<String> receivedStringArrayList = intent.getStringArrayListExtra("key");
+        if (receivedStringArrayList != null) {
+            for (String str : receivedStringArrayList) {
+                Toast.makeText(ThirdActivity.this, str, Toast.LENGTH_SHORT).show();
+            }
+        }
+
+
         vocabularyMap = setVocab();
         Button button = findViewById(R.id.reveal);
         final TextView textView = findViewById(R.id.definition);
