@@ -24,7 +24,7 @@
     <!-- Submit Button -->
     <GridLayout
         android:layout_width="1244dp"
-        android:layout_height="0dp"
+        android:layout_height="wrap_content"
         android:layout_weight="1"
         android:columnCount="5"
         android:orientation="horizontal"
