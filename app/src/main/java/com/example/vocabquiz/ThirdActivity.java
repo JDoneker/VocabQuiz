@@ -20,6 +20,9 @@ import java.util.Random;
 
 public class ThirdActivity extends AppCompatActivity {
     private HashMap<String, String> vocabularyMap;
+    private ArrayList<String> receivedStringArrayList;
+    private char status;
+    String randomKey;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -32,7 +35,7 @@ public class ThirdActivity extends AppCompatActivity {
         });
 
         Intent intent = getIntent();
-        ArrayList<String> receivedStringArrayList = intent.getStringArrayListExtra("key");
+        receivedStringArrayList = intent.getStringArrayListExtra("key");
         if (receivedStringArrayList != null) {
             for (String str : receivedStringArrayList) {
                 Toast.makeText(ThirdActivity.this, str, Toast.LENGTH_SHORT).show();
@@ -41,17 +44,36 @@ public class ThirdActivity extends AppCompatActivity {
 
 
         vocabularyMap = setVocab();
-        Button reveal = findViewById(R.id.reveal);
-        TextView definition = findViewById(R.id.definition);
-        TextView word = findViewById(R.id.word);
+
+
+        Button reveal = findViewById(R.id.buttonReveal);
+        TextView definition = findViewById(R.id.textDefintion);
+        TextView word = findViewById(R.id.textWord);
+        status = 'n';
+
         reveal.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                List<String> keysAsArray = new ArrayList<String>(vocabularyMap.keySet());
-                Random r = new Random();
-                String randomKey = keysAsArray.get(r.nextInt(keysAsArray.size()));
-                word.setText(randomKey);
-                definition.setText(vocabularyMap.get(randomKey));
+                if(!vocabularyMap.isEmpty()) {
+                    if (status == 'n') {
+                        List<String> keysAsArray = new ArrayList<String>(vocabularyMap.keySet());
+                        Random r = new Random();
+                        randomKey = keysAsArray.get(r.nextInt(keysAsArray.size()));
+                        word.setText(randomKey);
+                        reveal.setText("Reveal Definition");
+                        reveal.setText(Integer.toString(vocabularyMap.size()));
+                        definition.setText("Definition will appear here.");
+                        status = 'y';
+                    } else if (status == 'y') {
+                        definition.setText(vocabularyMap.remove(randomKey));
+                        reveal.setText("Get New Word");
+                        reveal.setText(Integer.toString(vocabularyMap.size()));
+                        status = 'n';
+                    }
+                }else{
+                    Toast.makeText(ThirdActivity.this, "No more words left. Please Restart", Toast.LENGTH_LONG).show();
+                }
+
 
             }
         });
