@@ -63,13 +63,13 @@ public class ThirdActivity extends AppCompatActivity {
                         randomKey = keysAsArray.get(r.nextInt(keysAsArray.size()));
                         word.setText(randomKey);
                         reveal.setText("Reveal Definition");
-                        reveal.setText(Integer.toString(vocabularyMap.size()));
+
                         definition.setText("Definition will appear here.");
                         status = 'y';
                     } else if (status == 'y') {
                         definition.setText(vocabularyMap.remove(randomKey));
                         reveal.setText("Get New Word");
-                        reveal.setText(Integer.toString(vocabularyMap.size()));
+
                         status = 'n';
                     }
                 }else{
